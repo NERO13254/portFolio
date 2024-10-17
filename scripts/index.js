@@ -1,7 +1,6 @@
 import { contactController } from "../functions/contact/contact.js";
 import {reportStatus}        from "../functions/reportStatus.js";
 import {revealProjects}      from "../functions/projects/revealProjects.js";
-require("../../")
 const listWorks         = document.getElementById("listWorks");
 const contactMe         = document.getElementById("contactMe");
 const downLoadCv        = document.getElementById("downLoadCv");
