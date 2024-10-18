@@ -157,11 +157,26 @@
     }
 }
 @media(max-width: 400px){
+    .containerAll{
+        grid-template-rows: 1fr;
+        overflow: scroll;
+    }
+    .containerAllProjects {
+        grid-template-rows: 53%;
+        margin: auto;
+    }
+    .textContent h1 {
+        font-size: 45px;
+        letter-spacing: 6px;
+        padding: 12% 0% 0% 12%;
+    }
     .description {
         font-size: 22px;
         letter-spacing: 4px;
     }
     .aboutMe {
-        grid-template-rows: 27% 38% 30%;
+        grid-template-rows: 33% 33% 33%;
+        height: 52vh;
     }
+
 }
