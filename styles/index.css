@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    cursor: default;
+    z-index: 2;
+}
+*::-webkit-scrollbar{
+    width: 3px;
+    height: 0px;
+    background-color: #333;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+}
+.containerAll{
+    background-image: url(../img/pexels-francesco-ungaro-2444347.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+.containerAll:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(5, 5, 5, 0.753) 20%, #33333387);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.aboutMe{
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 26% 35%; 
+}
+.textContent h1{
+    color: white;
+    font-size: 150px;
+    letter-spacing: 17px;
+    cursor: default;
+}
+.description{
+    font-size: 60px;
+    color: white;
+    text-align: end;
+    letter-spacing: 10px;
+}
+.buttonController{
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    flex-direction: column;
+}
+.buttonController button{
+    font-family: auto;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 28px;
+    border-bottom: 1px solid white;
+    padding: 4% 0%;
+    cursor: pointer;
+    outline: none;
+    width: 28%;
+    text-align: end;
+    transition: all 300ms;
+}
+.buttonController button:hover{
+    width: 40%;
+    background-image: linear-gradient(90deg, #0000000d 95%, white 30%);
+}
+
+#listWorks{
+    overflow: hidden;
+}
+
+@media(max-width : 1280px){
+    .textContent h1{
+        font-size: 100px;
+    }
+    .description {
+        font-size: 45px;
+    }
+}
+@media(max-width:1024px){
+    .textContent h1 {
+        font-size: 80px;
+    }
+    .description {
+        font-size: 30px;
+    }
+    .buttonController button {
+        font-size: 20px;
+        padding: 3% 0%;
+    }
+}
+@media(max-width:1000px){
+    .containerAll{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;    
+    }
+    .textContent h1{
+        font-size: 90px;
+    }
+    .description {
+        font-size: 47px;
+        letter-spacing: 7px;
+    }
+    .buttonController {
+        justify-content: center;
+    }
+    .buttonController button {
+        font-size: 26px;
+        letter-spacing: 7px;
+        padding: 2% 0%;
+    }
+    .aboutMe {
+        grid-template-rows: 1fr 22% 43%;
+    }
+}
+@media(max-width:800px){
+    .aboutMe {
+        grid-template-rows: 1fr 21% 40%;
+    }
+    .textContent h1 {
+        font-size: 67px;
+        letter-spacing: 8px;
+    }
+    .description {
+        font-size: 30px;
+        letter-spacing: 10px;
+    }
+    .buttonController button {
+        width: 42%;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+}
+@media(max-width: 550px){
+    .containerAll {
+        grid-template-rows: 44% 54%;
+    }
+    .aboutMe {
+        grid-template-rows: 20% 30% 30%;
+    }
+    .textContent h1 {
+        font-size: 37px;
+        letter-spacing: 6px;
+    }
+    .description {
+        font-size: 28px;
+        letter-spacing: 8px;
+    }
+}
+@media(max-width: 400px){
+    .containerAll{
+        grid-template-rows: 1fr;
+        overflow: scroll;
+    }
+    .containerAllProjects {
+        grid-template-rows: 53%;
+        margin: auto;
+    }
+    .textContent h1 {
+        font-size: 45px;
+        letter-spacing: 6px;
+        padding: 1% 0% 0% 12%;
+    }
+    .description {
+        font-size: 22px;
+        letter-spacing: 4px;
+    }
+    .aboutMe {
+        grid-template-rows: 33% 33% 33%;
+        height: 52vh;
+    }
+
+}
