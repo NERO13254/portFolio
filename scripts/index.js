@@ -7,9 +7,9 @@ const contactMe         = document.getElementById("contactMe");
 const downLoadCv        = document.getElementById("downLoadCv");
 const seeProjects       = document.getElementById("seeProjects");
 
-let projectsImg = ["./img/noroestecilMedia.PNG", "./img/autopartesminuto.PNG" , "./img/pokepedia.PNG" ,"./img/luz.PNG",  "./img/platon.PNG"];
-let projectsUrl = ["https://noroestecil.com/" , "https://autopartesminuto.com/" ,"https://nero13254.github.io/pokeApi/" ,"https://nero13254.github.io/hollywood/" , "https://nero13254.github.io/platon.github.io/"];
-let projectsDescriptions = ["noroestecil.com" , "autopartesminuto.com" , "Pokepedia" ,"HolyWood" , "PLATON"];
+// let projectsImg = ["./img/noroestecilMedia.PNG", "./img/autopartesminuto.PNG" , "./img/pokepedia.PNG" ,"./img/luz.PNG",  "./img/platon.PNG"];
+// let projectsUrl = ["https://noroestecil.com/" , "https://autopartesminuto.com/" ,"https://nero13254.github.io/pokeApi/" ,"https://nero13254.github.io/hollywood/" , "https://nero13254.github.io/platon.github.io/"];
+// let projectsDescriptions = ["noroestecil.com" , "autopartesminuto.com" , "Pokepedia" ,"HolyWood" , "PLATON"];
 
 
 //al presionar proyectos se cargan todos los proyectos
